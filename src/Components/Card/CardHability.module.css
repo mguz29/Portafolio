@@ -1,0 +1,9 @@
+.CardImage{
+   height:120px; 
+   width:120px;
+   margin:18px;
+}
+.CardName{
+    font-size: x-large;
+    font-weight: 700;
+}

@@ -11,9 +11,10 @@ export default function Navbar() {
         <div className={style.Navbar}>
           <Link to='/Home'className={style.Link}> <h5>Marlon Guzman</h5>  </Link>
           <Link to='/Home'className={style.Link}> <h5>Home</h5>  </Link>
-          <Link to='/About'className={style.Link}> <h5>About Me</h5>  </Link>
-          <Link to='/Projects'className={style.Link}> <h5>Projects</h5> </Link>
+          <Link to='/Home'className={style.Link}> <h5>About Me</h5>  </Link>
+          <Link to='/Home'className={style.Link}> <h5>Projects</h5> </Link>
         </div>
     </div>
+
   )
 }

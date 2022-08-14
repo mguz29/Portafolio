@@ -1,45 +1,50 @@
-.NameContainer{
+.NameContainer {
     display: flex;
     flex-direction: column;
     margin: 20px;
-    background-color: blue;
     padding: 20px;
 }
-.NameContainer span{
+
+.NameContainer span {
     display: flex;
 }
-.Text{
-    /* display: flex; */
+
+.Text {
+    display: flex;
     font-family: Montserrat;
     font-weight: bolder;
-    color: antiquewhite;
+    color:black;
     font-size: 65px;
 }
-.image{
+
+.image {
     display: flex;
     height: 80px;
     padding: 10px;
     margin: 10px;
 }
-.Social{
+
+.Social {
     display: flex;
 }
 
 
-.descriptionContainer{
+.descriptionContainer {
     display: flex;
     justify-content: center;
     height: fit-content;
     margin: 2rem;
+    margin-top: 0px;
 
-  }
-  
-  .textDescription{
+}
+
+.textDescription {
     font-size: 28px;
     cursor: text;
-  }
-  
-  .description{
+    color:black;
+}
+
+.description {
     max-width: 60rem;
     color: #373737;
     font-family: Montserrat;
@@ -47,22 +52,168 @@
     flex-direction: column;
     align-items: flex-start;
     align-items: center;
-  }
+}
 
-.subTitle{
-  font-size: 35px;
-  border: solid red;
+.subTitle {
+    font-size: 35px;
 }
-.hsubTitle{
-  font-size: 35px;
+
+.hsubTitle {
+    font-size: 35px;
 }
-.TwhiteBackground{
-  margin-left: 2rem;
-  margin-bottom: 2rem
+
+.TwhiteBackground {
+    margin-left: 2rem;
+    margin-bottom: 2rem
 }
-.aboutPageContainer{
+
+.aboutPageContainer {
     display: flex;
     flex-direction: column;
     min-height: 640px;
-    background-color: #00A1F1;
+    background-color: #65727c;
+}
+
+.Habilities {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 10px 10px;
+    margin-bottom: 30px;
+
+}
+
+.CardHability {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.Link{
+    text-decoration: none;
+    /* color: rgb(0, 0, 0); */
+}
+
+.line{
+  background: #65727c;
+  width: 4px;
+  height: 30rem;
+}
+
+.cntLine{
+  display: flex;
+  align-items: center;
+  width: 5px;
+  height: 40rem;
+}
+
+.secondline{
+  background:#65727c;
+  width: 40rem;
+  height: 1px
+}
+
+.secondcntLine{
+  display: flex;
+  justify-content: center;
+  height: 5px;
+  margin-top: 4rem
+}
+
+/* .ContainerHabilities{
+    background-color: blueviolet;
+} */
+
+.projectDesc{
+    display: flex;
+    flex-direction: column;
+    color: #373737;
+}
+
+  
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projectContainer{
+    display: flex;
+    align-items: center;
+    background-color:#65727c;
+    width: 1150px;
+    height: 400px;
+    filter: drop-shadow(15px 15px #2e3b41);
+    margin-bottom: 4.5rem;
+    transition: 0.3s
+  }
+  
+  
+  .left{
+    width: 490px;
+    height: 350px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  
+  .projectImg{
+    width: 501px;
+    height: 285px;
+
+  }
+  
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .highText{
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 65px;
+    color: #ffff;
+  
+  }
+  .blueBackground{
+    background-color:#65727c;
+    width: fit-content;
+    padding-inline: 10px;
+    filter: drop-shadow(8px 8px #505960);
+  }
+  .projectwhiteBackground{
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding-inline: 10px;
+    /* filter: drop-shadow(8px 8px #F0F0F0); */
+    box-shadow: 8px 8px #F0F0F0;
+    transition: 0.3s;
+    margin: 14px;
+  }
+  
+  .projectwhiteBackground:hover{
+    box-shadow: 13px 13px #F0F0F0;
+    transition: 0.3s;
+  }
+  .buttons{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .projectsubTitle{
+    font-size: 35px
+  }
+  .commonText{
+    font-size: 65px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    color:#65727c;
   }

@@ -1,15 +1,16 @@
 .Navbar{
 display: flex;
-justify-content: space-evenly;
-background-color: aqua;
+justify-content: center;
+
 }
 
 .Navbar h5{
     padding: 10px;
     text-decoration: none;
+    color: #65727c;
 }
 
 .Link{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color:#65727c;
 }
