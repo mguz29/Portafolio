@@ -1,0 +1,15 @@
+.Navbar{
+display: flex;
+justify-content: space-evenly;
+background-color: aqua;
+}
+
+.Navbar h5{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.Link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
