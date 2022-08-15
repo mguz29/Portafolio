@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: column;
     min-height: 640px;
-    background-color: #65727c;
+    background-color: #b5b5b5;
 }
 
 .Habilities {
@@ -143,10 +143,12 @@
   .projectContainer{
     display: flex;
     align-items: center;
-    background-color:#65727c;
+    background-color:#b5b5b5
+    ;
     width: 1150px;
     height: 400px;
-    filter: drop-shadow(15px 15px #2e3b41);
+    filter: drop-shadow(15px 15px #666666
+    );
     margin-bottom: 4.5rem;
     transition: 0.3s
   }
@@ -181,10 +183,11 @@
   
   }
   .blueBackground{
-    background-color:#65727c;
+    background-color:#8c8c8c;
     width: fit-content;
     padding-inline: 10px;
-    filter: drop-shadow(8px 8px #505960);
+    filter: drop-shadow(8px 8px #666666
+    );
   }
   .projectwhiteBackground{
     background-color: white;

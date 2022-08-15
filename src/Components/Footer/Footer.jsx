@@ -9,16 +9,14 @@ export default function Footer() {
         <nav className={style.footer}>
             <div className={style.container}>
                 <div className={style.info}>
-                    <span>TO GO TO</span>
-                    <span>CONTACT</span>
+                    <h4>SOFT SKILLS</h4>
+              
                 </div>
                 <div className={style.info}>
-                  <span>FAQ</span>
-                    <span>ABOUT US</span>
+                    <h4>ABOUT ME</h4>
                 </div>
                 <div className={style.info}>
-                    <h4>ADITIONAL INFO</h4>
-                    <span>ANY SUGESTIONS</span>
+                    <h4>PROJECTS</h4>
                 </div>
             </div>
         </nav>
