@@ -1,5 +1,6 @@
 .footer {
-    background-color:  #140c09;
+    background-color:  #515151
+    ;
     /* height: 13vh; */
     
 
@@ -21,6 +22,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    cursor: pointer;
 
 
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import Navbar from '../Navbar/Navbar'
 import style from "../Home/Home.module.css"
 import logoGithub from "../../Image/5847f98fcef1014c0b5e48c0.png"
@@ -10,9 +10,15 @@ import CardHability from '../Card/CardHability'
 import Footer from '../Footer/Footer'
 
 export default function Home() {
+    const scroll0 = useRef()
+    const scroll1 = useRef()
+    const scroll2 = useRef()
+    const scroll3 = useRef()
+    const scroll4 = useRef()
+    const scroll5 = useRef()
     return (
         <div>
-            <Navbar />
+            <Navbar scroll0={scroll0} scroll1={scroll1} scroll2={scroll2} scroll3={scroll3} scroll4={scroll4} scroll5={scroll5}  />
             {/* <div className={style.NameContainer}>
 
                 <div>
@@ -28,7 +34,7 @@ export default function Home() {
                     <span className={style.Text}>Web Developer</span>
                 </div> */}
 <div className={style.head}>
-<div className={style.NameContainer}>
+<div ref={scroll0} className={style.NameContainer}>
           <span className={style.commonText}>SOY</span>
         <div className={style.blueBackground} style={{marginBottom:"8px"}}>
 
@@ -43,18 +49,18 @@ export default function Home() {
           <span className={style.commonText}>WEB DEVELOPER</span>
                 <div className={style.Social}>
                     <a href="https://github.com/mguz29" target="_blank" rel="noreferrer" className={style.image}><img src={logoGithub} /></a>
-                    <a href="https://www.linkedin.com/in/marlon-guzmán-3265391a8" target="_blank" rel="noreferrer" className={style.image}><img src={logoIn} /></a>
+                    <a href="https://www.linkedin.com/in/mguz29" target="_blank" rel="noreferrer" className={style.image}><img src={logoIn} /></a>
                     <a href="https://wa.me/573223313796" target="_blank" rel="noreferrer" className={style.image}><img src={logoWP} /></a>
                 </div>
             </div>
             </div>
 
 
-            <section id="about" className={style.aboutPageContainer}>
+            <section ref={scroll1} id="about" className={style.aboutPageContainer}>
 
  
-           <div className={style.blueBackground} style={{margin:"4rem"}}>
-      <span className={style.highText}>Sobre Mi</span>
+           <div  className={style.blueBackground} style={{margin:"4rem"}}>
+      <span  className={style.highText}>Sobre Mi</span>
       </div>
                 <div className={style.descriptionContainer}>
                     <div className={style.description}>
@@ -84,7 +90,7 @@ export default function Home() {
             <div className={style.ContainerHabilities}>
 
             <div className={style.blueBackground} style={{margin:"4rem"}}>
-      <span className={style.highText}>Habilidades</span>
+      <span ref={scroll2} className={style.highText}>Habilidades</span>
       </div>
 
                 <div className={style.Habilities}>
@@ -175,7 +181,7 @@ export default function Home() {
         </div> */}
 
 <div className={style.blueBackground} style={{margin:"4rem"}}>
-      <span className={style.highText}>PROYECTOS</span>
+      <span ref={scroll3} className={style.highText}>PROYECTOS</span>
       </div>
             <div className={style.projectsContainer}>
 
@@ -245,7 +251,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <Footer />
+            <Footer scroll0={scroll0} scroll1={scroll1} scroll2={scroll2} scroll3={scroll3}/>
         </div>
     )
 }
