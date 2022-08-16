@@ -1,7 +1,12 @@
+body{
+  background-color: rgb(255, 245, 233);
+}
 .NameContainer {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 90px;
     padding: 20px;
 }
 
@@ -220,3 +225,6 @@
     font-weight: bolder;
     color:#65727c;
   }
+.HomeNavBar{
+  margin-bottom: 20px;
+}
