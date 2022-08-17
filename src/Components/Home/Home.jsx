@@ -9,6 +9,7 @@ import { frontEnd, backEnd, otras } from '../Habilities'
 import CardHability from '../Card/CardHability'
 import Footer from '../Footer/Footer'
 import beerland from "../../Image/Beerland.png"
+import Contact from '../Contact/Contact'
 
 export default function Home() {
     const scroll0 = useRef()
@@ -186,7 +187,7 @@ export default function Home() {
                     <div className={style.left}>
                         <div className={style.projectDesc}>
                             <label className={style.pjtitle} style={{ fontWeight: "800", fontSize: "35px", marginBottom: "10px", cursor: "text" }}>Ecommerce Beerland</label>
-                            <label style={{ fontSize: "19px", cursor: "text" }}>
+                            <label style={{ fontSize: "19px", cursor: "text", textAlign:"justify" }}>
                                 Beerland es un E-commerce realizado para la etapa final de Henry,podemos ver un dashboard
                                 para un usuario(consumidor) con funcionalidades de autenticacion, favoritos, comentarios y compras
                                 Tambien contamos con el dashboard de un admin (vendedor) podra ver las estadisticas como 
@@ -222,7 +223,7 @@ export default function Home() {
                     <div className={style.left}>
                         <div className={style.projectDesc}>
                             <label className={style.pjtitle} style={{ fontWeight: "800", fontSize: "35px", marginBottom: "10px", cursor: "text" }}>SPA Pokemon</label>
-                            <label style={{ fontSize: "19px", cursor: "text" }}>
+                            <label style={{ fontSize: "19px", cursor: "text",  textAlign:"justify"  }}>
                             Presento el PI que desarrollé en el bootcamp de Henry, creamos una API (backend) a partir del consumo de otra API de Pokémon,
                             generando consulta de la DataBase propia, y mediante la librearía React , presentando una serie de cartas, describiendo al azar 40 Pokémon de toda la base de datos disponible,
                              en donde podemos interactuar con esta, de forma entretenida: filtrando, organizando y creando nuevos Pokémon.
@@ -249,8 +250,13 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
-            <Footer scroll0={scroll0} scroll1={scroll1} scroll2={scroll2} scroll3={scroll3} />
+            <section className={style.Contact}>
+                    <Contact/>  
+            </section>
+            <section>
+                <Footer scroll0={scroll0} scroll1={scroll1} scroll2={scroll2} scroll3={scroll3} />
+            </section>
+            
         </div>
     )
 }

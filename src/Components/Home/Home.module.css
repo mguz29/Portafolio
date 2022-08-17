@@ -47,6 +47,7 @@ body{
     font-size: 28px;
     cursor: text;
     color:black;
+    text-align: justify;
 }
 
 .description {
@@ -227,4 +228,9 @@ body{
   }
 .HomeNavBar{
   margin-bottom: 20px;
+}
+.Contact{
+  background-color: #8c8c8c;
+  display: flex;
+  justify-content: center;
 }
