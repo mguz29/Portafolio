@@ -36,7 +36,7 @@ export default function Contact(){
 
       <form className={style.form} onSubmit={handleSubmit}>
         <div className={style.TwhiteBackground} style={{padding:"4px",textAlign:"center"}}>
-        <label className={style.titlesubTitle} style={{ color: "antiquewhite"}} >CONTÁCTAME</label>
+        <label className={style.titlesubTitle} style={{ color: "#F9F9F9"}} >CONTÁCTAME</label>
         </div>
   				<div className={style.inputs}>
   					<label className={style.inputs}>

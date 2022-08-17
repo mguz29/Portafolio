@@ -46,7 +46,7 @@ export default function Home() {
             </div>
 
 
-            <section ref={scroll1} id="about" className={style.aboutPageContainer}>
+            <section ref={scroll1} id="about"   style={{margin:"20px"}} className={style.aboutPageContainer}>
 
 
                 <div className={style.blueBackground} style={{ margin: "4rem" }}>
@@ -252,7 +252,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <section className={style.Contact}>
+            <section ref={scroll4} className={style.Contact}  style={{margin:"20px"}}>
                     <Contact/>  
             </section>
             <section>
