@@ -1,6 +1,7 @@
 .Navbar{
 display: flex;
 justify-content: center;
+border: solid red;
 }
 
 .Navbar h5{
