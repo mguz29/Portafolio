@@ -210,7 +210,9 @@ export default function Home() {
                         </div>
                     </div>
                     <div className={style.projectImg}>
-                        <img style={{ width: "600px" }} src={beerland} alt="" className={style.imagen} />
+                        <a href='https://beerland.vercel.app/' target="_blank">
+                            <img style={{ width: "600px" }} src={beerland} alt="" className={style.imagen} />
+                        </a>
                     </div>
                 </div>
             </div>
