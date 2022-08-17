@@ -87,12 +87,12 @@ export default function Home() {
 
             <div className={style.ContainerHabilities}>
 
-                <div className={style.blueBackground} style={{ margin: "4rem" }}>
+                <div className={style.blueBackground}>
                     <span ref={scroll2} className={style.highText}>Habilidades</span>
                 </div>
 
                 <div className={style.Habilities}>
-                    <div>
+                    <div className={style.Hability}>
                         <h2>Front End</h2>
                         <div className={style.CardHability}>
 
@@ -117,7 +117,7 @@ export default function Home() {
                         </div>
                     </divisor>
 
-                    <div>
+                    <div className={style.Hability}>
                         <h2>Back End</h2>
                         <div className={style.CardHability}>
                             {
@@ -140,7 +140,7 @@ export default function Home() {
                         </div>
                     </divisor>
 
-                    <div>
+                    <div className={style.Hability}>
                         <h2>Otras</h2>
                         <div className={style.CardHability}>
                             {
@@ -178,8 +178,8 @@ export default function Home() {
          </div>
         </div> */}
 
-            <div className={style.blueBackground} style={{ margin: "4rem" }}>
-                <span ref={scroll3} className={style.highText}>PROYECTOS</span>
+            <div className={style.blueBackground} >
+                <span ref={scroll3} className={style.highText}>Proyectos</span>
             </div>
             <div className={style.projectsContainer}>
 
@@ -211,7 +211,7 @@ export default function Home() {
                     </div>
                     <div className={style.projectImg}>
                         <a href='https://beerland.vercel.app/' target="_blank">
-                            <img style={{ width: "600px" }} src={beerland} alt="" className={style.imagen} />
+                            <img  src={beerland} alt="" className={style.imagen} />
                         </a>
                     </div>
                 </div>
@@ -225,7 +225,7 @@ export default function Home() {
                     <div className={style.left}>
                         <div className={style.projectDesc}>
                             <label className={style.pjtitle} style={{ fontWeight: "800", fontSize: "35px", marginBottom: "10px", cursor: "text" }}>SPA Pokemon</label>
-                            <label style={{ fontSize: "19px", cursor: "text",  textAlign:"justify"  }}>
+                            <label style={{ fontSize: "19px", cursor: "text",  textAlign:"justify"  }} className={style.textoProyectos}>
                             Presento el PI que desarrollé en el bootcamp de Henry, creamos una API (backend) a partir del consumo de otra API de Pokémon,
                             generando consulta de la DataBase propia, y mediante la librearía React , presentando una serie de cartas, describiendo al azar 40 Pokémon de toda la base de datos disponible,
                              en donde podemos interactuar con esta, de forma entretenida: filtrando, organizando y creando nuevos Pokémon.
@@ -247,7 +247,7 @@ export default function Home() {
                     </div>
                     <div className={style.projectImg}>
                         <a className={style.Link} href="https://pi-pokemons-mguz.vercel.app/" target="_blank" rel="noreferrer">
-                            <img style={{ width: "600px" }} src={Pi} alt="" className={style.imagen} />
+                            <img src={Pi} alt="" className={style.imagen} />
                         </a>
                     </div>
                 </div>
