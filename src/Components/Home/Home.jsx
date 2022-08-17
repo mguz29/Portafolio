@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Navbar from '../Navbar/Navbar'
 import style from "../Home/Home.module.css"
 import logoGithub from "../../Image/5847f98fcef1014c0b5e48c0.png"
@@ -12,6 +12,12 @@ import beerland from "../../Image/Beerland.png"
 import Contact from '../Contact/Contact'
 
 export default function Home() {
+
+    const [toggle, setToggle] = useState(false)
+    const handleToggle= () =>{
+      setToggle(!toggle)
+    }
+
     const scroll0 = useRef()
     const scroll1 = useRef()
     const scroll2 = useRef()
@@ -21,17 +27,21 @@ export default function Home() {
     return (
         <div>
             <div>
-            <Navbar scroll0={scroll0} scroll1={scroll1} scroll2={scroll2} scroll3={scroll3} scroll4={scroll4} scroll5={scroll5} />
+                <img style={{width:"40px"}} onClick={handleToggle} src='https://media.revistagq.com/photos/5f45010acb266484bb785c78/master/pass/dragon-ball-z.jpg'></img>
+                {
+                   toggle &&   <Navbar scroll0={scroll0} scroll1={scroll1} scroll2={scroll2} scroll3={scroll3} scroll4={scroll4} scroll5={scroll5} />
+                }
+          
             </div>
             <div className={style.head}>
                 <div ref={scroll0} className={style.NameContainer}>
                     <span className={style.commonText}>SOY</span>
-                    <div className={style.blueBackground} style={{ marginBottom: "8px" }}>
+                    <div className={style.blueBackground2} style={{ marginBottom: "8px" }}>
 
                         <span className={style.highText}>MARLON GUZMAN</span>
 
                     </div>
-                    <div className={style.blueBackground}>
+                    <div className={style.blueBackground2}>
 
                         <span className={style.highText}>FULL STACK</span>
 

@@ -22,3 +22,11 @@ justify-content: center;
     justify-content: center;
     z-index: 999;
 }
+
+@media(max-width: 435px){
+    .Navbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
